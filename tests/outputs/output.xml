@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on darwin)" generated="2025-05-12T19:18:44.885878" rpa="false" schemaversion="5">
+<suite id="s1" name="Todo Test" source="/Users/camila/Downloads/todo_robot_framework/tests/todo_test.robot">
+<test id="s1-t1" name="Add Task And Complete It" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:18:45.485346" level="INFO">Opening browser 'Chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-12T19:18:45.484285" elapsed="49.243590"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-12T19:19:34.729465" elapsed="0.341939"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${addTask_focus}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:19:35.071833" elapsed="0.044095"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:35.116969" level="INFO">Typing text 'Buy Milk' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>${addTask_input}</arg>
+<arg>${Task1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:19:35.116396" elapsed="0.510178"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:35.627441" level="INFO">Clicking button 'xpath=//*[@id="add-item"]/button'.</msg>
+<arg>${addTask_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:19:35.627018" elapsed="0.137794"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:35.768225" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]'.</msg>
+<arg>${todo_Tab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:19:35.767270" elapsed="0.157047"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:35.942734" level="INFO">Current page contains element 'xpath=//*[@id="text-1"]'.</msg>
+<arg>xpath=//*[@id="text-1"]</arg>
+<arg>${Task1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-05-12T19:19:35.925388" elapsed="0.017678"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:35.944102" level="INFO">Clicking element 'xpath=//*[@id="incomplete-tasks"]/li/label/span[4]'.</msg>
+<arg>xpath=//*[@id="incomplete-tasks"]/li/label/span[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:19:35.943519" elapsed="0.103935"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:36.048385" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/a[3]'.</msg>
+<arg>${completed_Tab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:19:36.047760" elapsed="0.292761"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:36.357367" level="INFO">Current page contains element 'xpath=//*[@id="completed-tasks"]/li'.</msg>
+<arg>xpath=//*[@id="completed-tasks"]/li</arg>
+<arg>${Task1}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-05-12T19:19:36.341091" elapsed="0.016458"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-12T19:19:36.358005" elapsed="0.242964"/>
+</kw>
+<status status="PASS" start="2025-05-12T19:18:45.481942" elapsed="51.119746"/>
+</test>
+<test id="s1-t2" name="TC02" line="30">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:19:36.603792" level="INFO">Opening browser 'Chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-12T19:19:36.603468" elapsed="56.046480"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-12T19:20:32.651044" elapsed="0.370328"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>${addTask_focus}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.021880" elapsed="0.066277"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:20:33.091310" level="INFO">Typing text 'Walk Dog' into text field 'xpath=//*[@id="new-task"]'.</msg>
+<arg>${addTask_input}</arg>
+<arg>${Task2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.089853" elapsed="0.402339"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:20:33.494899" level="INFO">Clicking element 'xpath=//*[@id="add-item"]/button'.</msg>
+<arg>${addTask_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.492595" elapsed="0.110952"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:20:33.607714" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]'.</msg>
+<arg>${todo_Tab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.605339" elapsed="0.189095"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:20:33.813574" level="INFO">Current page contains element 'xpath=//*[@id="text-1"]'.</msg>
+<arg>xpath=//*[@id="text-1"]</arg>
+<arg>${Task2}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.795775" elapsed="0.017979"/>
+</kw>
+<kw name="Set Focus To Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="incomplete-tasks"]/li/label</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.814144" elapsed="0.031354"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:20:33.846791" level="INFO">Clicking element 'xpath=/html/body/div/div/div[3]/ul/li/button'.</msg>
+<arg>${delete_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.846294" elapsed="0.110569"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2025-05-12T19:20:34.011897" level="INFO">Current page does not contain text 'Walk Dog'.</msg>
+<arg>${Task2}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2025-05-12T19:20:33.957955" elapsed="0.054076"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-12T19:20:34.012376" elapsed="0.141388"/>
+</kw>
+<status status="PASS" start="2025-05-12T19:19:36.602448" elapsed="57.552742"/>
+</test>
+<status status="PASS" start="2025-05-12T19:18:44.891275" elapsed="109.266730"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Todo Test" id="s1" pass="2" fail="0" skip="0">Todo Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
